@@ -30,8 +30,13 @@ yarn-debug.log*
 yarn-error.log*
 .pnpm-debug.log*
 
+# local editor and database files
+.vscode/
+dev.db
+
 # env files (can opt-in for committing if needed)
-.env*
+.env
+!cloudflare-r2-cli/.env.example
 
 # vercel
 .vercel
@@ -39,3 +44,8 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+trash/**
+cloudflare-r2-cli/reports/
+
+public/thumbnails/**
