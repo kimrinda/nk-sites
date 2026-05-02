@@ -1,26 +1,112 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --font-sans: var(--font-body);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+:root {
+  --background: #101113;
+  --foreground: #f4f4f5;
+  --muted: #151619;
+  --muted-foreground: #a1a1aa;
+  --card: #1b1d21;
+  --card-border: #2b2e34;
+  --accent: #f5f5f5;
+  --accent-foreground: #0e0e10;
+}
+
+[data-theme="light"] {
+  --background: #f7f6f3;
+  --foreground: #121212;
+  --muted: #ece8e2;
+  --muted-foreground: #5c5b57;
+  --card: #ffffff;
+  --card-border: #dfd8cf;
+  --accent: #121212;
+  --accent-foreground: #ffffff;
+}
+
+[data-theme="crimson"] {
+  --background: #140d10;
+  --foreground: #fff2f4;
+  --muted: #1d1216;
+  --muted-foreground: #d4aab4;
+  --card: #24161c;
+  --card-border: #352028;
+  --accent: #ff5b86;
+  --accent-foreground: #fff7fa;
+}
+
+[data-theme="emerald"] {
+  --background: #0d1411;
+  --foreground: #effbf4;
+  --muted: #111a16;
+  --muted-foreground: #9ec4af;
+  --card: #18241e;
+  --card-border: #22332b;
+  --accent: #54d39a;
+  --accent-foreground: #062114;
+}
+
+[data-theme="violet"] {
+  --background: #110f18;
+  --foreground: #f4eeff;
+  --muted: #171421;
+  --muted-foreground: #b4a6d8;
+  --card: #211a31;
+  --card-border: #2b2240;
+  --accent: #9f7aea;
+  --accent-foreground: #faf7ff;
+}
+
+[data-theme="amber"] {
+  --background: #16110a;
+  --foreground: #fff7e8;
+  --muted: #1d160e;
+  --muted-foreground: #d4b88f;
+  --card: #281d12;
+  --card-border: #3a2c1c;
+  --accent: #f5b84b;
+  --accent-foreground: #1d1204;
+}
+
+* {
+  border-color: var(--card-border);
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
-  background: var(--background);
+  min-height: 100vh;
+  background:
+    radial-gradient(circle at top, color-mix(in oklab, var(--accent) 9%, transparent), transparent 26%),
+    linear-gradient(180deg, color-mix(in oklab, var(--background) 98%, white), color-mix(in oklab, var(--background) 92%, black));
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-body), Arial, sans-serif;
+  overflow-x: hidden;
+}
+
+.font-display {
+  font-family: var(--font-display), var(--font-body), sans-serif;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 9999px;
+  background: color-mix(in oklab, var(--muted-foreground) 34%, transparent);
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
 }
