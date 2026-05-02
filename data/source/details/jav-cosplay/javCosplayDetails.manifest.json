@@ -1,0 +1,88 @@
+{
+  "target": "jav-cosplay",
+  "filenamePrefix": "javCosplayDetails",
+  "totalItems": 289,
+  "groups": {
+    "0-9": {
+      "file": "javCosplayDetails_0-9.json",
+      "count": 2
+    },
+    "A": {
+      "file": "javCosplayDetails_A.json",
+      "count": 4
+    },
+    "C": {
+      "file": "javCosplayDetails_C.json",
+      "count": 9
+    },
+    "F": {
+      "file": "javCosplayDetails_F.json",
+      "count": 17
+    },
+    "H": {
+      "file": "javCosplayDetails_H.json",
+      "count": 2
+    },
+    "I": {
+      "file": "javCosplayDetails_I.json",
+      "count": 2
+    },
+    "J": {
+      "file": "javCosplayDetails_J.json",
+      "count": 6
+    },
+    "K": {
+      "file": "javCosplayDetails_K.json",
+      "count": 5
+    },
+    "L": {
+      "file": "javCosplayDetails_L.json",
+      "count": 1
+    },
+    "M": {
+      "file": "javCosplayDetails_M.json",
+      "count": 12
+    },
+    "N": {
+      "file": "javCosplayDetails_N.json",
+      "count": 14
+    },
+    "P": {
+      "file": "javCosplayDetails_P.json",
+      "count": 8
+    },
+    "R": {
+      "file": "javCosplayDetails_R.json",
+      "count": 1
+    },
+    "S": {
+      "file": "javCosplayDetails_S.json",
+      "count": 8
+    },
+    "T": {
+      "file": "javCosplayDetails_T.json",
+      "count": 3
+    },
+    "U": {
+      "file": "javCosplayDetails_U.json",
+      "count": 2
+    },
+    "W": {
+      "file": "javCosplayDetails_W.json",
+      "count": 1
+    },
+    "Y": {
+      "file": "javCosplayDetails_Y.json",
+      "count": 1
+    },
+    "Z": {
+      "file": "javCosplayDetails_Z.json",
+      "count": 1
+    },
+    "symbol-bracket-open": {
+      "file": "javCosplayDetails_symbol-bracket-open.json",
+      "count": 190
+    }
+  },
+  "updatedAt": "2026-04-28T23:00:10.896Z"
+}
