@@ -1,0 +1,120 @@
+{
+  "target": "jav",
+  "filenamePrefix": "javDetails",
+  "totalItems": 1711,
+  "groups": {
+    "0-9": {
+      "file": "javDetails_0-9.json",
+      "count": 6
+    },
+    "A": {
+      "file": "javDetails_A.json",
+      "count": 36
+    },
+    "B": {
+      "file": "javDetails_B.json",
+      "count": 6
+    },
+    "C": {
+      "file": "javDetails_C.json",
+      "count": 38
+    },
+    "D": {
+      "file": "javDetails_D.json",
+      "count": 39
+    },
+    "E": {
+      "file": "javDetails_E.json",
+      "count": 9
+    },
+    "F": {
+      "file": "javDetails_F.json",
+      "count": 98
+    },
+    "G": {
+      "file": "javDetails_G.json",
+      "count": 8
+    },
+    "H": {
+      "file": "javDetails_H.json",
+      "count": 19
+    },
+    "I": {
+      "file": "javDetails_I.json",
+      "count": 32
+    },
+    "J": {
+      "file": "javDetails_J.json",
+      "count": 33
+    },
+    "K": {
+      "file": "javDetails_K.json",
+      "count": 11
+    },
+    "L": {
+      "file": "javDetails_L.json",
+      "count": 5
+    },
+    "M": {
+      "file": "javDetails_M.json",
+      "count": 106
+    },
+    "N": {
+      "file": "javDetails_N.json",
+      "count": 39
+    },
+    "O": {
+      "file": "javDetails_O.json",
+      "count": 9
+    },
+    "P": {
+      "file": "javDetails_P.json",
+      "count": 31
+    },
+    "Q": {
+      "file": "javDetails_Q.json",
+      "count": 1
+    },
+    "R": {
+      "file": "javDetails_R.json",
+      "count": 16
+    },
+    "S": {
+      "file": "javDetails_S.json",
+      "count": 186
+    },
+    "T": {
+      "file": "javDetails_T.json",
+      "count": 8
+    },
+    "U": {
+      "file": "javDetails_U.json",
+      "count": 18
+    },
+    "V": {
+      "file": "javDetails_V.json",
+      "count": 5
+    },
+    "W": {
+      "file": "javDetails_W.json",
+      "count": 9
+    },
+    "X": {
+      "file": "javDetails_X.json",
+      "count": 1
+    },
+    "Y": {
+      "file": "javDetails_Y.json",
+      "count": 5
+    },
+    "Z": {
+      "file": "javDetails_Z.json",
+      "count": 1
+    },
+    "symbol-bracket-open": {
+      "file": "javDetails_symbol-bracket-open.json",
+      "count": 936
+    }
+  },
+  "updatedAt": "2026-04-28T22:41:20.851Z"
+}
