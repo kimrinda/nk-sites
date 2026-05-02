@@ -1,0 +1,137 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+}
+
+model MediaItem {
+  id            Int             @id @default(autoincrement())
+  slug          String
+  title         String
+  category      String
+  sourceUrl     String?
+  synopsis      String?
+  image         String?
+  japaneseName  String?
+  type          String?
+  status        String?
+  score         Float?
+  duration      String?
+  durationMins  Int?
+  uploadedAt    DateTime?
+  viewCount     Int?
+  note          String?
+  metadata      Json?
+  genres        MediaGenre[]
+  producers     MediaProducer[]
+  episodes      Episode[]
+  streams       Stream[]
+  downloads     Download[]
+
+  @@unique([category, slug])
+}
+
+model Genre {
+  id      Int          @id @default(autoincrement())
+  slug    String       @unique
+  name    String
+  title   String?
+  items   MediaGenre[]
+}
+
+model Producer {
+  id      Int             @id @default(autoincrement())
+  name    String          @unique
+  items   MediaProducer[]
+}
+
+model Episode {
+  id          Int       @id @default(autoincrement())
+  mediaItemId Int
+  mediaItem   MediaItem @relation(fields: [mediaItemId], references: [id], onDelete: Cascade)
+  prevSlug    String?
+  nextSlug    String?
+}
+
+model Stream {
+  id          Int       @id @default(autoincrement())
+  mediaItemId Int
+  mediaItem   MediaItem @relation(fields: [mediaItemId], references: [id], onDelete: Cascade)
+  name        String
+  externalId  String?
+  url         String
+}
+
+model Download {
+  id          Int            @id @default(autoincrement())
+  mediaItemId Int
+  mediaItem   MediaItem      @relation(fields: [mediaItemId], references: [id], onDelete: Cascade)
+  name        String
+  resolution  String?
+  links       DownloadLink[]
+}
+
+model DownloadLink {
+  id         Int      @id @default(autoincrement())
+  downloadId Int
+  download   Download @relation(fields: [downloadId], references: [id], onDelete: Cascade)
+  host       String
+  url        String
+}
+
+model MediaGenre {
+  mediaItemId Int
+  genreId     Int
+  mediaItem   MediaItem @relation(fields: [mediaItemId], references: [id], onDelete: Cascade)
+  genre       Genre     @relation(fields: [genreId], references: [id], onDelete: Cascade)
+
+  @@id([mediaItemId, genreId])
+}
+
+model MediaProducer {
+  mediaItemId Int
+  producerId  Int
+  mediaItem   MediaItem @relation(fields: [mediaItemId], references: [id], onDelete: Cascade)
+  producer    Producer  @relation(fields: [producerId], references: [id], onDelete: Cascade)
+
+  @@id([mediaItemId, producerId])
+}
+
+model HanimeSeries {
+  id            Int                  @id @default(autoincrement())
+  externalId    String?
+  slug          String               @unique
+  title         String
+  sourceUrl     String?
+  coverImage    String?
+  thumbnail     String?
+  synopsis      String?
+  japaneseTitle String?
+  type          String?
+  totalEpisodes Int?
+  status        String?
+  aired         String?
+  duration      String?
+  durationMins  Int?
+  score         Float?
+  producers     Json?
+  genres        Json?
+  episodes      HanimeSeriesEpisode[]
+}
+
+model HanimeSeriesEpisode {
+  id         Int          @id @default(autoincrement())
+  seriesId   Int
+  series     HanimeSeries @relation(fields: [seriesId], references: [id], onDelete: Cascade)
+  slug       String
+  title      String
+  sourceUrl  String?
+  episode    String?
+  dateLabel  String?
+  airedAt    DateTime?
+  thumbnail  String?
+
+  @@unique([seriesId, slug])
+}
