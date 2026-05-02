@@ -1,0 +1,20 @@
+{
+  "target": "2d-animation",
+  "filenamePrefix": "2dAnimationDetails",
+  "totalItems": 1577,
+  "groups": {
+    "H": {
+      "file": "2dAnimationDetails_H.json",
+      "count": 1
+    },
+    "Y": {
+      "file": "2dAnimationDetails_Y.json",
+      "count": 2
+    },
+    "symbol-bracket-open": {
+      "file": "2dAnimationDetails_symbol-bracket-open.json",
+      "count": 1574
+    }
+  },
+  "updatedAt": "2026-04-28T23:43:05.133Z"
+}
