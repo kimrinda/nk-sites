@@ -1,0 +1,120 @@
+{
+  "target": "hanime",
+  "filenamePrefix": "hanimeDetails",
+  "totalItems": 2746,
+  "groups": {
+    "0-9": {
+      "file": "hanimeDetails_0-9.json",
+      "count": 34
+    },
+    "A": {
+      "file": "hanimeDetails_A.json",
+      "count": 104
+    },
+    "B": {
+      "file": "hanimeDetails_B.json",
+      "count": 84
+    },
+    "C": {
+      "file": "hanimeDetails_C.json",
+      "count": 59
+    },
+    "D": {
+      "file": "hanimeDetails_D.json",
+      "count": 57
+    },
+    "E": {
+      "file": "hanimeDetails_E.json",
+      "count": 79
+    },
+    "F": {
+      "file": "hanimeDetails_F.json",
+      "count": 48
+    },
+    "G": {
+      "file": "hanimeDetails_G.json",
+      "count": 42
+    },
+    "H": {
+      "file": "hanimeDetails_H.json",
+      "count": 147
+    },
+    "I": {
+      "file": "hanimeDetails_I.json",
+      "count": 121
+    },
+    "J": {
+      "file": "hanimeDetails_J.json",
+      "count": 82
+    },
+    "K": {
+      "file": "hanimeDetails_K.json",
+      "count": 208
+    },
+    "L": {
+      "file": "hanimeDetails_L.json",
+      "count": 25
+    },
+    "M": {
+      "file": "hanimeDetails_M.json",
+      "count": 158
+    },
+    "N": {
+      "file": "hanimeDetails_N.json",
+      "count": 80
+    },
+    "O": {
+      "file": "hanimeDetails_O.json",
+      "count": 128
+    },
+    "P": {
+      "file": "hanimeDetails_P.json",
+      "count": 34
+    },
+    "R": {
+      "file": "hanimeDetails_R.json",
+      "count": 74
+    },
+    "S": {
+      "file": "hanimeDetails_S.json",
+      "count": 352
+    },
+    "T": {
+      "file": "hanimeDetails_T.json",
+      "count": 124
+    },
+    "U": {
+      "file": "hanimeDetails_U.json",
+      "count": 19
+    },
+    "V": {
+      "file": "hanimeDetails_V.json",
+      "count": 11
+    },
+    "W": {
+      "file": "hanimeDetails_W.json",
+      "count": 13
+    },
+    "X": {
+      "file": "hanimeDetails_X.json",
+      "count": 8
+    },
+    "Y": {
+      "file": "hanimeDetails_Y.json",
+      "count": 75
+    },
+    "Z": {
+      "file": "hanimeDetails_Z.json",
+      "count": 10
+    },
+    "symbol-bracket-open": {
+      "file": "hanimeDetails_symbol-bracket-open.json",
+      "count": 568
+    },
+    "symbol-hash": {
+      "file": "hanimeDetails_symbol-hash.json",
+      "count": 2
+    }
+  },
+  "updatedAt": "2026-04-28T20:57:01.718Z"
+}
